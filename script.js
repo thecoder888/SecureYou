@@ -1,3 +1,18 @@
+// Theme toggle functionality
+function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDarkMode);
+}
+
+// Check for saved theme preference
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTheme = localStorage.getItem('darkMode');
+  if (savedTheme === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+});
+
 // Tips array
 const tips = [
   "Use a password manager to create and store strong passwords!",
@@ -163,7 +178,9 @@ function showNewFact() {
   setTimeout(() => {
     factBox.innerHTML = `
       <div class="fact-content">${fact.text}</div>
-      <button onclick="addToFavorites('${fact.text}')" class="favorite-button">Save</button>
+      <div class="fact-buttons">
+        <button onclick="addToFavorites('${fact.text.replace(/'/g, "\\'")}')" class="favorite-button">Save</button>
+      </div>
     `;
     // Add show class to trigger animation
     factBox.classList.add('show');
