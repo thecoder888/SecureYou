@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button onclick="toggleTheme()" class="theme-toggle">Toggle Dark Mode</button>
+  <div class="button-container">
+    <button onclick="toggleTheme()" class="theme-toggle">Toggle Dark Mode</button>
+    <button onclick="window.location.href='login.html'" class="login-button">Login</button>
+  </div>
   <nav class="navbar">
     <div class="nav-brand">
       <a href="index.html" class="nav-link">SecureYou</a>
@@ -40,6 +43,9 @@
           <button onclick="filterFacts('history')" class="category-button">History</button>
           <button onclick="filterFacts('passwords')" class="category-button">Passwords</button>
           <button onclick="filterFacts('hackers')" class="category-button">Hackers</button>
+          <button onclick="filterFacts('malware')" class="category-button">Malware</button>
+          <button onclick="filterFacts('social')" class="category-button">Social Engineering</button>
+          <button onclick="filterFacts('encryption')" class="category-button">Encryption</button>
         </div>
       </div>
 

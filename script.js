@@ -63,36 +63,17 @@ const quizQuestions = [
 
 // Fun Facts
 const funFacts = [
+  // History Facts
   {
     text: "The first computer virus was created in 1971 and was called 'Creeper' - it displayed the message 'I'm the creeper, catch me if you can!'",
     category: "history"
-  },
-  {
-    text: "The most common password in 2023 was '123456' - that's like leaving your house key under the doormat!",
-    category: "passwords"
-  },
-  {
-    text: "A hacker can crack a weak password in less than a second, but a strong one might take centuries!",
-    category: "passwords"
   },
   {
     text: "The first emoji was created in 1999, but hackers were using ASCII art to make smiley faces in the 1980s!",
     category: "history"
   },
   {
-    text: "The word 'hacker' originally meant someone who was really good at programming - it wasn't always a bad thing!",
-    category: "hackers"
-  },
-  {
-    text: "Some hackers use rubber ducks to debug their code - they explain their code to the duck to find mistakes!",
-    category: "hackers"
-  },
-  {
     text: "The first computer bug was an actual bug - a moth got stuck in a computer in 1947!",
-    category: "history"
-  },
-  {
-    text: "The most expensive coffee in the world is made from beans that have been eaten and digested by a cat-like animal called a civet. Similarly, the most valuable data is often the most 'processed'!",
     category: "history"
   },
   {
@@ -102,6 +83,120 @@ const funFacts = [
   {
     text: "The first computer mouse was made of wood in the 1960s - now we have wireless ones that look like cute animals!",
     category: "history"
+  },
+  {
+    text: "The first spam email was sent in 1978 to 400 people - it was an advertisement for a computer!",
+    category: "history"
+  },
+
+  // Password Facts
+  {
+    text: "The most common password in 2023 was '123456' - that's like leaving your house key under the doormat!",
+    category: "passwords"
+  },
+  {
+    text: "A hacker can crack a weak password in less than a second, but a strong one might take centuries!",
+    category: "passwords"
+  },
+  {
+    text: "The average person has 100 passwords to remember - that's why password managers are so helpful!",
+    category: "passwords"
+  },
+  {
+    text: "Using a mix of uppercase, lowercase, numbers, and symbols makes your password 100 times harder to crack!",
+    category: "passwords"
+  },
+  {
+    text: "The longest password ever cracked was 64 characters long - but it was just one word repeated!",
+    category: "passwords"
+  },
+
+  // Hacker Facts
+  {
+    text: "The word 'hacker' originally meant someone who was really good at programming - it wasn't always a bad thing!",
+    category: "hackers"
+  },
+  {
+    text: "Some hackers use rubber ducks to debug their code - they explain their code to the duck to find mistakes!",
+    category: "hackers"
+  },
+  {
+    text: "The first hacker conference was held in 1984 and was called 'SummerCon' - it's still running today!",
+    category: "hackers"
+  },
+  {
+    text: "Many hackers wear hoodies not to hide, but because they're comfortable for long coding sessions!",
+    category: "hackers"
+  },
+  {
+    text: "The first 'hack' was actually a prank - students at MIT used the word to describe their dorm room modifications!",
+    category: "hackers"
+  },
+
+  // Malware Facts
+  {
+    text: "The first ransomware attack happened in 1989 - it was spread through floppy disks!",
+    category: "malware"
+  },
+  {
+    text: "Some malware can hide in images - they're called steganographic malware!",
+    category: "malware"
+  },
+  {
+    text: "The most expensive malware attack cost $10 billion - it was called 'WannaCry'!",
+    category: "malware"
+  },
+  {
+    text: "Some malware can turn your computer into a cryptocurrency miner without you knowing!",
+    category: "malware"
+  },
+  {
+    text: "The first computer worm was created in 1988 and was called the 'Morris Worm' - it was made by a student!",
+    category: "malware"
+  },
+
+  // Social Engineering Facts
+  {
+    text: "The most successful social engineering attack was the 'Twitter Bitcoin Scam' - it made $120,000 in one day!",
+    category: "social"
+  },
+  {
+    text: "Some hackers dress up as maintenance workers to get into buildings - it's called 'tailgating'!",
+    category: "social"
+  },
+  {
+    text: "The first phishing email was sent in 1995 - it was targeting AOL users!",
+    category: "social"
+  },
+  {
+    text: "Some hackers use psychology to trick people - they might pretend to be in a hurry to bypass security!",
+    category: "social"
+  },
+  {
+    text: "The most common social engineering attack is pretending to be tech support - it's called 'vishing'!",
+    category: "social"
+  },
+
+  // Encryption Facts
+  {
+    text: "The first encryption method was used by Julius Caesar - he shifted letters by 3 places!",
+    category: "encryption"
+  },
+  {
+    text: "Quantum computers might break current encryption - that's why we're developing quantum-resistant encryption!",
+    category: "encryption"
+  },
+  {
+    text: "The strongest encryption key is 256 bits long - that's like a password with 78 digits!",
+    category: "encryption"
+  },
+  {
+    text: "Some encryption methods use prime numbers - they're called 'public key encryption'!",
+    category: "encryption"
+  },
+  {
+    text: "The first encrypted message was sent in 1903 - it was a wireless telegraph message!",
+    category: "encryption"
   }
 ];
 

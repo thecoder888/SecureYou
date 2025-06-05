@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SecureYou</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureYou - Learn Cybersecurity</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button onclick="toggleTheme()" class="theme-toggle">Toggle Dark Mode</button>
+  <div class="button-container">
+    <button onclick="toggleTheme()" class="theme-toggle">Toggle Dark Mode</button>
+    <a href="login.html" class="login-button">Login</a>
+  </div>
+
   <nav class="navbar">
     <div class="nav-brand">
       <a href="index.html" class="nav-link">SecureYou</a>
@@ -24,30 +29,37 @@
   </nav>
 
   <div class="container">
-    <h1>Welcome to SecureYou</h1>
-    <p>Your safe space to learn cybersecurity in a fun way</p>
+    <h1 class="welcome-message" style="display: none;">Welcome to SecureYou!</h1>
+    <p class="intro-text">Your safe space to learn cybersecurity in a fun way</p>
     
     <div class="feature-cards">
       <div class="card">
         <h3>Spot the Phish</h3>
-        <p>Test your skills at identifying phishing attempts!</p>
-        <a href="spot-the-phish.html" class="card-button">Play Now</a>
+        <p>Test your ability to identify phishing attempts in emails</p>
+        <a href="spot-the-phish.html" class="card-button">Start Quiz</a>
       </div>
       
       <div class="card">
         <h3>Password Checker</h3>
-        <p>Check how strong your passwords are!</p>
-        <a href="password-checker.html" class="card-button">Try It</a>
+        <p>Check how strong your passwords are and get tips to improve them</p>
+        <a href="password-checker.html" class="card-button">Check Password</a>
       </div>
       
       <div class="card">
         <h3>Fun Facts</h3>
-        <p>Learn cool facts about cybersecurity!</p>
+        <p>Learn interesting facts about cybersecurity</p>
         <a href="fun-facts.html" class="card-button">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h3>Glossary</h3>
+        <p>Explore cybersecurity terms and definitions</p>
+        <a href="glossary.html" class="card-button">View Glossary</a>
       </div>
     </div>
   </div>
 
   <script src="script.js"></script>
+  <script src="auth.js"></script>
 </body>
 </html>

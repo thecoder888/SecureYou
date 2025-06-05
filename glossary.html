@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="toggleTheme()" class="theme-toggle">Toggle Dark Mode</button>
+    <div class="button-container">
+        <button onclick="toggleTheme()" class="theme-toggle">Toggle Dark Mode</button>
+        <button onclick="window.location.href='login.html'" class="login-button">Login</button>
+    </div>
     <nav class="navbar">
         <div class="nav-brand">
             <a href="index.html" class="nav-link">SecureYou</a>
@@ -40,6 +43,7 @@
             <a href="#K" class="letter-link">K</a>
             <a href="#L" class="letter-link">L</a>
             <a href="#M" class="letter-link">M</a>
+            <a href="#N" class="letter-link">N</a>
             <a href="#P" class="letter-link">P</a>
             <a href="#R" class="letter-link">R</a>
             <a href="#S" class="letter-link">S</a>
@@ -50,11 +54,47 @@
         </div>
 
         <div class="glossary-container">
-            <div id="A" class="letter-section">
+            <div class="letter-section" id="a">
                 <h2 class="letter-heading">A</h2>
                 <div class="glossary-item">
-                    <h3>Antivirus Software</h3>
-                    <p>Software designed to detect, prevent, and remove malicious software from a computer system.</p>
+                    <h3>Access Control</h3>
+                    <p>A security technique that regulates who or what can view or use resources in a computing environment.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Adware</h3>
+                    <p>Software that automatically displays or downloads advertising material when a user is online.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Algorithm</h3>
+                    <p>A set of rules or instructions that a computer follows to solve a problem or complete a task.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Antivirus</h3>
+                    <p>Software designed to detect and remove computer viruses and other malicious software.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Authentication</h3>
+                    <p>The process of verifying the identity of a user or device before allowing access to a system.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Authorization</h3>
+                    <p>The process of giving someone permission to do or have something in a computer system.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Advanced Persistent Threat (APT)</h3>
+                    <p>A sophisticated, long-term cyberattack where an intruder gains access to a network and remains undetected for a long time.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Attack Vector</h3>
+                    <p>The path or means by which a hacker can gain access to a computer or network to deliver a payload or malicious outcome.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Audit Trail</h3>
+                    <p>A record of events and changes in a system, used to track who did what and when.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Automated Security</h3>
+                    <p>Security measures that use technology to automatically detect and respond to threats without human intervention.</p>
                 </div>
             </div>
 
@@ -174,19 +214,23 @@
                 </div>
             </div>
 
-            <div id="L" class="letter-section">
-                <h2 class="letter-heading">L</h2>
-                <div class="glossary-item">
-                    <h3>MAC Address</h3>
-                    <p>A unique identifier assigned to network interfaces for communications at the data link layer of a network segment.</p>
-                </div>
-            </div>
-
-            <div id="M" class="letter-section">
+            <div class="letter-section" id="m">
                 <h2 class="letter-heading">M</h2>
                 <div class="glossary-item">
+                    <h3>MAC Address</h3>
+                    <p>A unique identifier assigned to network interfaces for communications on a network. Like a digital fingerprint for your device.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Mainframe</h3>
+                    <p>A large, powerful computer that can process many tasks simultaneously. Used by big organizations to handle massive amounts of data.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Malicious Code</h3>
+                    <p>Software designed to harm or exploit computers, networks, or users. Can include viruses, worms, and other harmful programs.</p>
+                </div>
+                <div class="glossary-item">
                     <h3>Malware</h3>
-                    <p>Malicious software designed to harm or exploit any programmable device, service, or network. Examples include viruses, worms, trojans, and ransomware.</p>
+                    <p>Short for 'malicious software'. Any software designed to harm or exploit computers, networks, or users.</p>
                 </div>
                 <div class="glossary-item">
                     <h3>Man-in-the-Middle Attack</h3>
@@ -194,7 +238,19 @@
                 </div>
                 <div class="glossary-item">
                     <h3>Multi-Factor Authentication (MFA)</h3>
-                    <p>A security system that requires multiple methods of authentication from independent categories of credentials to verify the user's identity.</p>
+                    <p>A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity.</p>
+                </div>
+            </div>
+
+            <div class="letter-section" id="n">
+                <h2 class="letter-heading">N</h2>
+                <div class="glossary-item">
+                    <h3>Network</h3>
+                    <p>A group of computers and other devices connected together to share resources and information.</p>
+                </div>
+                <div class="glossary-item">
+                    <h3>Network Security</h3>
+                    <p>Measures taken to protect a network from unauthorized access, misuse, or attacks.</p>
                 </div>
             </div>
 
