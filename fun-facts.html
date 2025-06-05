@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fun Facts - SecureYou</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">SecureYou</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Welcome</a>
+      <a href="spot-the-phish.html" class="nav-link">Spot the Phish</a>
+      <a href="password-checker.html" class="nav-link">Password Checker</a>
+      <a href="fun-facts.html" class="nav-link active">Fun Facts</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Did You Know?</h1>
+    <p class="intro-text">Learn cool facts about cybersecurity!</p>
+    
+    <div class="facts-container">
+      <div class="fact-card">
+        <p id="factBox">Click the button to learn something cool!</p>
+        <button onclick="showNewFact()" class="fact-button">Tell Me More</button>
+      </div>
+
+      <div class="facts-categories">
+        <h3>Categories</h3>
+        <div class="category-buttons">
+          <button onclick="filterFacts('all')" class="category-button active">All Facts</button>
+          <button onclick="filterFacts('history')" class="category-button">History</button>
+          <button onclick="filterFacts('passwords')" class="category-button">Passwords</button>
+          <button onclick="filterFacts('hackers')" class="category-button">Hackers</button>
+        </div>
+      </div>
+
+      <div class="favorite-facts">
+        <h3>Your Favorite Facts</h3>
+        <div id="favoritesList" class="favorites-list">
+          <p class="empty-favorites">Save your favorite facts here!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 

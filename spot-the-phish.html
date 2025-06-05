@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spot the Phish - SecureYou</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">SecureYou</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Welcome</a>
+      <a href="spot-the-phish.html" class="nav-link active">Spot the Phish</a>
+      <a href="password-checker.html" class="nav-link">Password Checker</a>
+      <a href="fun-facts.html" class="nav-link">Fun Facts</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Spot the Phish</h1>
+    <p class="quiz-intro">Can you tell if these emails are legit or phishing attempts?</p>
+    
+    <div class="quiz-container">
+      <div class="email-preview">
+        <div class="email-header">
+          <span id="emailFrom">From: </span>
+          <span id="emailSubject">Subject: </span>
+        </div>
+        <p id="emailContent"></p>
+      </div>
+
+      <div class="quiz-options">
+        <button onclick="checkAnswer('legit')" class="quiz-button legit">This is Legit</button>
+        <button onclick="checkAnswer('phish')" class="quiz-button phish">This is Phishing</button>
+      </div>
+
+      <div id="feedbackBox" class="feedback-box">
+        <p>Click a button to check your answer!</p>
+      </div>
+
+      <button onclick="showNewQuestion()" class="next-button">Next Question</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
